@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Reema's BlogApp</h1>
+    <p class="lead">A Blog application built with Microsoft's ASP.NET Core and Razor Pages</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-journal-text display-1 text-primary mb-3"></i>
+                    <h3>View Blog Posts</h3>
+                    <p>Browse through all the blog posts and read interesting content.</p>
+                    <a href="/Blog" class="btn btn-primary btn-lg">
+                        <i class="bi bi-eye"></i> View Blog
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-pencil-square display-1 text-success mb-3"></i>
+                    <h3>Create New Post</h3>
+                    <p>Share your thoughts and create a new blog post.</p>
+                    <a href="/CreatePost" class="btn btn-success btn-lg">
+                        <i class="bi bi-plus-circle"></i> Create Post
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
